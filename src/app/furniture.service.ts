@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Furniture } from './furniture.model';
 import { FURNITURES } from './mock-furniture';
-
+import { Input } from '@angular/core';
 @Injectable()
 export class FurnitureService {
 
@@ -18,5 +18,12 @@ export class FurnitureService {
       }
     }
   }
+
+	//input to recieve new furniture items from add-post form -- where does this go in the application???
+	@Input() furnitures: Furniture[];
+
+	addFurniture(newFurnitureFromChild: Furniture){
+		this.furnitures.push(newFurnitureFromChild);
+	}
 
 }

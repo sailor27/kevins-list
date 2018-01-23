@@ -1,6 +1,8 @@
-<h2>Furniture Listings</h2>
-<ul *ngFor="let furniture of furnitures" (click)="goToDetailPage(furniture)" class="panel panel-default">
-  <li>{{furniture.title}}</li>
-</ul>
 
-<!-- <li><a routerLink=""></a>{{furniture.title}}</li> -->
+<div class="container">
+	<h2>Furniture Listings</h2>
+	<ul *ngFor="let furniture of furnitures" (click)="goToDetailPage(furniture)" class="panel panel-default">
+		<li>{{furniture.title}}</li>
+	</ul>
+
+</div>

@@ -1,19 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <div class="jumbotron">
-    <img class="kevin" src="./assets/kevin.png" alt="mcallister">
+  <div class="top">
     <h1>Welcome to <a routerLink="">{{ title }}</a></h1>
-    <!-- <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" routerLink="">Kevin's List</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a routerLink="furniture">furniture</a></li>
-          <li><a routerLink="fashion">fashion</a></li>
+        <ul class="nav justify-content-center">
+          <li class="nav-link active"><a routerLink="furniture">furniture</a></li>
+          <li class="nav-link active"><a routerLink="fashion">fashion</a></li>
+          <li class="nav-link active"><a routerLink="free">free</a></li>
+          <li class="nav-link active"><a routerLink="add-post">add post</a></li>
+			
         </ul>
-      </div>
-    </nav> -->
+				<img class="kevin" src="./assets/kevin.png" alt="mcallister">
   </div>
   <router-outlet></router-outlet>
 </div>

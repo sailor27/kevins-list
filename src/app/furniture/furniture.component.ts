@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { Furniture } from '../furniture.model';
 // import { FurnitureDetailComponent } from  '../furniture-detail/furniture-detail.component';
 import { FurnitureService } from '../furniture.service';
+
 
 @Component({
   selector: 'app-furniture',
@@ -24,4 +25,6 @@ export class FurnitureComponent implements OnInit {
      this.router.navigate(['furniture', clickedFurniture.id]);
 
   };
+
+
 }
