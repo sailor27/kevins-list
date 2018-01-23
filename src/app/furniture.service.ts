@@ -8,8 +8,15 @@ export class FurnitureService {
   constructor() { }
 
   getFurniture() {
-    console.log(FURNITURES);
     return FURNITURES;
+  }
+
+  getFurnitureById(furnitureId: number){
+    for (var i = 0; i <= FURNITURES.length - 1; i++) {
+      if (FURNITURES[i].id === furnitureId) {
+        return FURNITURES[i];
+      }
+    }
   }
 
 }

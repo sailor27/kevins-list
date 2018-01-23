@@ -1,5 +1,8 @@
-<p>
-  furniture-detail works!
-</p>
-
-<h1>ID: {{furnitureId}}</h1>
+<h3 class="list-heading">{{furnitureToDisplay.title}}</h3>
+<ul>
+  <li><span class="price">Price:</span> {{furnitureToDisplay.price | currency}}</li>
+  <li>{{furnitureToDisplay.description}}</li>
+  <li>Location:  {{furnitureToDisplay.location}}</li>
+</ul>
+<hr>
+<p>Kevin's List ID: {{furnitureId}}</p>

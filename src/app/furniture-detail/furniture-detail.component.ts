@@ -10,14 +10,16 @@ import { FurnitureService } from '../furniture.service';
   providers: [FurnitureService]
 })
 export class FurnitureDetailComponent implements OnInit {
-  furnitureId: number = null;
+  furnitureId: number;
+  furnitureToDisplay: Furniture;
 
-  constructor(private route: ActivatedRoute, private location: Location) {}
+  constructor(private route: ActivatedRoute, private furnitureService: FurnitureService) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.furnitureId = parseInt(urlParameters['id']);
     });
+    this.furnitureToDisplay = this.furnitureService.getFurnitureById(this.furnitureId);
   }
 
 }
